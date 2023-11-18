@@ -1,0 +1,45 @@
+********MEDICO 
+GET - http://localhost:8080/vigiasaude/webapi/medico/1
+POST - http://localhost:8080/vigiasaude/webapi/medico/cadastro
+PARAMETRO CORPO:
+{
+	"nome": "Dr. Silva",
+	"especialidade": "Ginecologista",
+	"crm": "RJ156849",
+	"telefone": "11925844321",
+	"email": "silva@gmail.com",
+	"senha": "Carlos123",
+	"unidade": {
+		"id": 6
+	}
+}
+
+POST - http://localhost:8080/vigiasaude/webapi/medico/login
+PARAMETRO CORPO:
+{
+	"email": "gabriela@outlook.com",
+	"senha": "senhaGabriela654"
+}
+**********UNIDADE
+GET - http://localhost:8080/vigiasaude/webapi/unidade/3
+POST - http://localhost:8080/vigiasaude/webapi/unidade/cadastro
+PARAMETRO CORPO:
+{
+	"nome": "Hospital São Rafael",
+	"telefone": "1123456789",
+	"email": "contato@hospitalsaorafael.com",
+	"senha": "hospitalRafael",
+	"cep": "87945678",
+	"endereco": "Av das Nações, 123",
+	"estado": "SP",
+	"cidade": "Santo André",
+	"cnes": "7654321",
+	"tipo": 1
+}
+
+POST - http://localhost:8080/vigiasaude/webapi/unidade/login
+PARAMETRO CORPO:
+{
+	"email": "contato@hospitalsaorafael.com",
+	"senha": "hospitalRafael"
+}
